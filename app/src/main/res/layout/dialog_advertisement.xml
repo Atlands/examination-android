@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_dialog_bottom_upward"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_advertisement_normal"
+                android:layout_toStartOf="@+id/dadTitleTv"
+                tools:ignore="ContentDescription"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/dadTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titleFreeAdvertisement"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--广告-->
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0"/>
+
+        <TextView
+            android:id="@+id/dadPurchasedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/tipsIfWantToCancleADPlzPurchased"
+            android:background="?android:attr/selectableItemBackground"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textColor="@color/colorGreenDrak"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0" />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dadCancleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorF8"
+        android:gravity="center"
+        android:text="@string/buttonNoThanks"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack95"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

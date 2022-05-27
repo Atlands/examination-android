@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Examination.ExaminationActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/exToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/exSNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/bg_nodata_normal"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/exBackBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back_normal"
+                android:layout_centerVertical="true"
+                tools:ignore="ContentDescription" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/exTopView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorF0" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/exViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradual_white_down"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <LinearLayout
+            android:id="@+id/exBottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shadow_card_upward"
+            android:orientation="horizontal"
+            android:gravity="end|center_vertical"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="20dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/ic_correct_normal"/>
+
+            <TextView
+                android:id="@+id/exCorrectNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="20dp"
+                android:textColor="@color/colorBlack95"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_nodata_normal"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/ic_wrong_normal"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/exWrongNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="20dp"
+                android:textColor="@color/colorBlack95"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_nodata_normal"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_list_normal"
+                android:layout_marginStart="30dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/exCurrentIndexTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="30dp"
+                android:textSize="22sp"
+                android:textColor="@color/colorBlack95"
+                android:textStyle="bold"
+                android:background="@drawable/bg_nodata_normal"
+                android:layout_marginStart="15dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

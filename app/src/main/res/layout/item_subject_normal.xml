@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:paddingEnd="10dp"
+    tools:ignore="RtlSymmetry">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/color78"/>
+
+            <TextView
+                android:id="@+id/isnPositionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_round_normal"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="80dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/isnNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/bg_nodata_normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:id="@+id/isnPassCountTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color78"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_nodata_normal"/>
+
+                <TextView
+                    android:id="@+id/isnSingleCountTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color78"
+                    android:textSize="14sp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_nodata_normal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/isnPriceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/isnOriginalPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:minWidth="20dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_nodata_normal"
+                    android:textColor="@color/colorBlack95" />
+
+                <TextView
+                    android:id="@+id/isnSpecialPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_nodata_normal"
+                    android:minWidth="20dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:id="@+id/isnSpecialStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorRedNormal"
+                    android:background="@drawable/bg_nodata_normal"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minHeight="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+            
+            <TextView
+                android:id="@+id/isnFreeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipsFreeTrial"
+                android:textColor="@color/colorWhite"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_button_green_activited_selector"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/isnPurchasedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipsLoadingEng"
+                android:textColor="@color/colorWhite"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_button_bfgray"
+                android:layout_marginBottom="3dp"/>
+
+            <TextView
+                android:id="@+id/isnPurNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color78"
+                android:textSize="14sp"
+                android:minWidth="20dp"
+                android:background="@drawable/bg_nodata_normal"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

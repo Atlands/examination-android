@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/iqbNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="20dp"
+        android:textColor="@color/colorBlack95"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_nodata_normal"/>
+
+    <View
+        android:id="@+id/iqbNumTabView"
+        android:layout_width="30dp"
+        android:layout_height="5dp"
+        android:background="@color/colorTranslate"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

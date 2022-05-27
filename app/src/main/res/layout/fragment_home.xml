@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorWhite">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fhToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorWhite"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="RtlSymmetry"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/fhTitleTv"
+                android:minWidth="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorMainTwo"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                tools:ignore="RelativeOverlap"
+                android:background="@drawable/bg_nodata_normal"/>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/fhSearchBtn"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:src="@drawable/ic_search_normal"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                tools:ignore="ContentDescription" />-->
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/fhNewsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ViewFlipper
+            android:id="@+id/fhNewsVF"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#70000000"
+            android:padding="5dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/fhNewsLoading"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#70000000"
+            android:text="@string/tipsLoadingNews"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/fhPBLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorF8">
+
+                <ProgressBar
+                    android:id="@+id/fhProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminateTint="@color/colorBlack95"
+                    android:layout_centerInParent="true"/>
+
+                <com.youth.banner.Banner
+                    android:id="@+id/fhBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fhHotCateLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="20dp"
+                        android:background="@color/colorMainTwo"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/titleHotExaminationCategory"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorMainTwo"
+                        android:textSize="16sp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"/>
+
+                    <TextView
+                        android:id="@+id/fhHCMoreBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/buttonMore"
+                        android:textColor="@color/color78"
+                        android:textSize="14sp"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <com.oscar.writtenexamination.Widget.PageRecyclerView
+                    android:id="@+id/fhHCPRY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp" />
+
+                <com.oscar.writtenexamination.Widget.PageIndicatorView
+                    android:id="@+id/fhHCPIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fhCategoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="20dp"
+                        android:background="@color/colorMainTwo"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/titleExaminationCategory"
+                        android:textColor="@color/colorMainTwo"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fhCMoreBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/buttonMore"
+                        android:textColor="@color/color78"
+                        android:textSize="14sp"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fhCateRy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_bottom_upward"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/picGallary"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/buttonGallery"
+            android:background="?android:attr/selectableItemBackground"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textColor="@color/colorMainTwo"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0" />
+
+        <TextView
+            android:id="@+id/picCamera"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/buttonCamera"
+            android:textColor="@color/colorMainTwo"
+            android:background="?android:attr/selectableItemBackground"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/picCancle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/buttonCancle"
+        android:textColor="@color/colorBlack95"
+        android:gravity="center"
+        android:background="@color/colorF8"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>

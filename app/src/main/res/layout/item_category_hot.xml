@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ichItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="top">
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/ichMainImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_nodata_normal"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/ichPurchhasedStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tipsLoadingEng"
+            android:textSize="13sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:background="@color/colorBlack95"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="80dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/ichNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/bg_nodata_normal"/>
+
+        <TextView
+            android:id="@+id/ichInforTv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:textSize="12sp"
+            android:textColor="@color/color78"
+            android:background="@drawable/bg_nodata_normal"
+            android:layout_marginTop="5dp"
+            tools:ignore="NestedWeights" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:id="@+id/ichPriceLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ichOriginalPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:minWidth="20dp"
+                    android:background="@drawable/bg_nodata_normal"
+                    android:textColor="@color/colorBlack95" />
+
+                <TextView
+                    android:id="@+id/ichSpecialPriceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_nodata_normal"
+                    android:minWidth="20dp"
+                    android:textColor="@color/colorBlack95"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/ichSpecialStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titleLimitedSpecial"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorRedNormal"
+                    android:background="@drawable/bg_corner_redborder_whitebg"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

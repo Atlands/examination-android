@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fwToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorMainTwo"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/fwTitleTv"
+                android:minWidth="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:background="@drawable/bg_nodata_normal"
+                android:layout_centerInParent="true"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout
+        android:id="@+id/fwRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fwFailedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipsGetDataFailed"
+                    android:textColor="@color/colorBlack95"/>
+
+                <TextView
+                    android:id="@+id/fwRegetBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/buttonReget"
+                    android:textColor="@color/colorWhite"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_button_normal_activited_selector" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fwNodateTv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/tipsNoWrongBank"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/bg_rectangle_white_with_corner"/>
+
+            <RelativeLayout
+                android:id="@+id/fwMainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@color/colorMainTwo"
+                android:paddingTop="5dp">
+
+
+                <ExpandableListView
+                    android:id="@+id/fwExpandableListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/colorTranslate"
+                    android:childDivider="@color/colorF8"
+                    android:background="@drawable/bg_rectangle_white_with_corner"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </jp.co.recruit_lifestyle.android.widget.WaveSwipeRefreshLayout>
+
+
+</LinearLayout>

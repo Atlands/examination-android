@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="270dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg_dialog_normal"
+            android:layout_marginTop="40dp"
+            android:paddingTop="60dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipsFoundNewVersion"
+                android:textColor="@color/colorMainTwo"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/dvVersionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorMainTwo"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/bg_nodata_normal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="若本次更新未覆蓋原APP，請註意選擇更新最新APP，最新APP進入無升級提示"
+                android:textSize="12sp"
+                android:textColor="@color/colorBF"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/dvUpdateBtn"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/buttonUpdateNow"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:background="@drawable/bg_button_normal_activited_selector"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_logo_exmination"
+            android:layout_centerHorizontal="true"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+</LinearLayout>

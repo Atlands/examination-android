@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/bg_dialog_normal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/dnliImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_nodata_normal"
+                android:layout_centerVertical="true"
+                tools:ignore="ContentDescription"
+                android:layout_toStartOf="@+id/dnliTitleTv"
+                android:layout_marginEnd="15dp"/>
+
+            <TextView
+                android:id="@+id/dnliTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_nodata_normal"
+                android:textSize="16sp"
+                android:textColor="@color/colorMainTwo"
+                android:minWidth="20dp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dnliContentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack95"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_nodata_normal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/dnliCancleBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonCancle"
+                android:textSize="16sp"
+                android:textColor="@color/colorBF"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_toStartOf="@+id/dnliConfirmBtn"
+                android:layout_marginEnd="30dp"/>
+
+            <TextView
+                android:id="@+id/dnliConfirmBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonConfirm"
+                android:textSize="16sp"
+                android:textColor="@color/colorMainTwo"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+    

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".Activity.Edit.EditPwdActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/epwToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/epwTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="20dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorMainTwo"
+                android:textSize="18sp"
+                android:background="@drawable/bg_nodata_normal"/>
+
+            <ImageView
+                android:id="@+id/epwBackBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back_normal"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorF0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shadow_card_normal"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:id="@+id/epwEmailImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_email_bfgray"
+                tools:ignore="ContentDescription" />
+
+
+            <EditText
+                android:id="@+id/epwEmailEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/fieldEmail"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMainTwo"
+                android:textColorHint="@color/colorBF"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorE0" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:id="@+id/epwPasswordImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_password_bfgray"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/epwPasswordEt"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/fieldNewPassword"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorMainTwo"
+                android:textColorHint="@color/colorBF"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorE0" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:id="@+id/epwConfirmImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_password_bfgray"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/epwConfirmEt"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/fieldConfirmPassword"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorMainTwo"
+                android:textColorHint="@color/colorBF"
+                android:textSize="14sp"
+                tools:ignore="RtlSymmetry"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/epwConfirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bg_button_normal_mainone"
+        android:text="@string/buttonConfirm"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

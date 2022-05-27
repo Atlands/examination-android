@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_dialog_normal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_password_normal"
+            android:layout_toStartOf="@+id/dfpTitleTv"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/dfpTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/buttonForgotPwd"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            tools:ignore="RelativeOverlap" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBE" />
+
+            <EditText
+                android:id="@+id/dfpEmailEt"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/tipsPlzInputEmail"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingStart="5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorMainTwo"
+                android:textColorHint="@color/colorBE"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry,TextFields"
+                android:importantForAutofill="no"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBE" />
+
+        </LinearLayout>
+
+        <com.oscar.writtenexamination.Widget.RoundRectImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/wave"
+            android:layout_alignParentBottom="true" />
+
+
+        <TextView
+            android:id="@+id/dfpConfirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_shadow_card_normal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/buttonConfirm"
+            android:textColor="@color/colorMainTwo"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

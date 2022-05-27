@@ -1,0 +1,193 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">WriteExam</string>
+
+    <!--项目文本-->
+    <string name="productIntroductionOne">項目介紹文本之一</string>
+    <!--提示文字-->
+    <!--普通提示文字-->
+    <string name="tipsWarmReminder">溫馨提示</string>
+    <string name="tipsPurchased">已購買</string>
+    <string name="tipsFreeTrial">免費試用</string>
+    <string name="tipsFoundNewVersion">發現新版本</string>
+    <string name="tipsOtherLoginWay">其他登入方式</string>
+    <string name="tipsLoginCheckInfor">登入後即可查看資料</string>
+    <string name="tipsPressAgainOut">再按一次返回鍵退出</string>
+    <string name="tipsPlzLogin">尚未登入，請先前往登入</string>
+    <string name="tipsOfficalAd">官方廣告，值得信賴</string>
+    <string name="tipsClickToMatchQuestion">點擊可前往已做的對應題目</string>
+    <string name="tipsPreNotFinish">請先完成前面未完成的題目</string>
+    <string name="tipsAlreadyAnswerSome">已答題目，是否退出答題？</string>
+    <string name="tipsAlreadyAnswerPlzNotAgain">已經完成題目，請勿重復答題</string>
+    <string name="tipsAlreadyPurchasedPlzCheck">若之前已購買，按此恢復</string>
+    <string name="tipsIfWantToCancleADPlzPurchased">若想跳過廣告，請按此購買科目</string>
+    <string name="tipsNoWrongBank">暫無錯題</string>
+    <string name="tipsAlreadyPurchasedPlzNotAgain">已購買，無需再購買</string>
+    <string name="tipsClickToShowMor">點擊展開錯題集</string>
+    <!--输入提示文字-->
+    <string name="tipsPlzInputInfor">請輸入所需內容</string>
+    <string name="tipsPlzInputUsername">請輸入用戶名</string>
+    <string name="tipsPlzInputOtherUsername">用戶名已被使用</string>
+    <string name="tipsPlzInputPwd">請輸入密碼</string>
+    <string name="tipsPlzInputLegalPwd">密碼不能少於6個字符</string>
+    <string name="tipsPlzInputConfirmPwd">請輸入確認密碼</string>
+    <string name="tipsPlzInputLegalConfirmPwd">確認密碼不能少於6個字符</string>
+    <string name="tipsPlzInputEqualPwd">兩次密碼不一致</string>
+    <string name="tipsPlzInputEmail">請輸入電郵地址</string>
+    <string name="tipsPlzInputLegalEmail">電郵地址格式錯誤</string>
+    <string name="tipsPlzInputOterEmail">電郵地址已被使用</string>
+    <string name="tipsPlzInputMatchEmail">請輸入對應電郵地址</string>
+    <!--询问提示文字-->
+    <string name="tipsAskAvatorAlreadyChange">你已選擇圖片，但未確認，是否取消更改？</string>
+    <!--空值提示文字-->
+    <string name="tipsNoLogin">未登入</string>
+    <string name="tipsUserNotExit">用戶不存在</string>
+    <string name="tipsEmailAlreadyExit">電郵地址已被使用</string>
+    <string name="tipsPurchasedHistoryNotExit">未找到你的對應購買記錄</string>
+    <string name="tipsNoPurchasedAnything">無購買記錄</string>
+    <!--成功提示文字-->
+    <string name="tipsLoginSuccess">登入成功</string>
+    <string name="tipsLogoutSuccess">登出成功</string>
+    <string name="tipsSignupSuccess">註冊成功</string>
+    <string name="tipsModifySuccess">更改成功</string>
+    <string name="tipGetConfigSuccess">加載配置數據完成</string>
+    <string name="tipsSendResetEmailSuccess">重置密碼郵件發送成功</string>
+    <string name="tipsAnswerCorrect">回答正確</string>
+    <string name="tipsGetPurchasedSuccessGotoExam">已查詢到對應的購買記錄,請放心前往考試</string>
+    <string name="tipsSavePurchasedHistorySuccess">保存購買記錄成功</string>
+    <!--失败提示文字-->
+    <string name="tipsLoginFailed">登入失敗</string>
+    <string name="tipsLoginFailedPlzRetry">登入失敗，請稍後重試</string>
+    <string name="tipsLogoutFailed">登出失敗</string>
+    <string name="tipsLogoutFailedPlzRetry">登出失敗，請稍後重試</string>
+    <string name="tipsSignupFailed">註冊失敗</string>
+    <string name="tipsSignupFailedPlzRetry">註冊失敗，請稍後重試</string>
+    <string name="tipsModifyFailed">更改失敗</string>
+    <string name="tipsModifyFailedPlzRetry">更改失敗，請稍後重試</string>
+    <string name="tipsGetConfigFailed">加載配置數據失敗</string>
+    <string name="tipsGetBannerFailed">加載廣告失敗</string>
+    <string name="tipsGetHoteCateFailedPlzRetry">加載熱門考試科目失敗，請稍後重試</string>
+    <string name="tipsGetCategoryFailedPlzRetry">加載考試類別失敗，請稍後重試</string>
+    <string name="tipsGetSubjectFailedPlzRetry">加載考試科目失敗，請稍後重試</string>
+    <string name="tipsGetOtherSubjectFailed">加載其他考試科目失敗</string>
+    <string name="tipsGetCategoryFailed">獲取考試科目失敗</string>
+    <string name="tipsGetDataFailed">獲取數據失敗</string>
+    <string name="tipsSendEmailFailed">發送郵件失敗</string>
+    <string name="tipsGetAnswerFailed">獲取題目選項失敗</string>
+    <string name="tipsAnswerWrong">回答錯誤</string>
+    <string name="tipsPurchasedFailed">購買失敗</string>
+    <string name="tipsSavePurchasedHistoryFailed">保存購買記錄失敗</string>
+    <!--加载提示文字-->
+    <string name="tipsLoadingEng" tools:ignore="TypographyEllipsis">Loading...</string>
+    <string name="tipslOadingEnd">已經加載完啦~</string>
+    <string name="tipsLoadingSignup" tools:ignore="TypographyEllipsis">註冊中，請勿退出...</string>
+    <string name="tipsLoadingConfig" tools:ignore="TypographyEllipsis">正在加載配置數據...</string>
+    <string name="tipsLoadingNews" tools:ignore="TypographyEllipsis">公告加載中...</string>
+    <string name="tipsPlzWaitLoad">請等待數據加載完成</string>
+    <string name="tipsLoadingSubject" tools:ignore="TypographyEllipsis">正在加載考試科目...</string>
+    <string name="tipsLoadingOtherSubject" tools:ignore="TypographyEllipsis">正在加載其他科目...</string>
+    <!--网络相关提示文字-->
+    <string name="tipsNetworkWrong">手機網絡出錯</string>
+    <string name="tipsNetworkConnectFailedPlzCheckIt">連線失敗，請檢查網絡</string>
+    <string name="tipsCheckNetworkSetting">請檢查網絡連接及網絡管理軟件相關設置</string>
+    <!--标签文字-->
+    <string name="tabHome">主頁</string>
+    <string name="tabRecord">記錄</string>
+    <string name="tabCollection">收藏</string>
+    <string name="tabWrongBank">錯題</string>
+    <string name="tabMine">我的</string>
+    <string name="tabCorrect">正確</string>
+    <string name="tabWrong">錯誤</string>
+    <string name="tabCurent">當前</string>
+    <string name="tabUndone">未做</string>
+    <!--字段文字-->
+    <string name="fieldUsername">用戶名</string>
+    <string name="fieldPassword">密碼</string>
+    <string name="fieldNewPassword">新密碼</string>
+    <string name="fieldConfirmPassword">確認密碼</string>
+    <string name="fieldEmail">電郵地址</string>
+    <string name="fieldSignEmail">註冊時使用的電郵地址</string>
+    <!--标题文字-->
+    <string name="titleModifyInfor">更改信息</string>
+    <string name="titleModifyPwd">更改密碼</string>
+    <string name="titleHome">主頁</string>
+    <string name="titleRecord">記錄</string>
+    <string name="titleWrongBank">錯題本</string>
+    <string name="titleHotExaminationCategory">熱門考試</string>
+    <string name="titleExaminationCategory">考試类别</string>
+    <string name="titleMine">我的</string>
+    <string name="titleChoosePic">選擇圖片</string>
+    <string name="titleExaminationIntroduction">考試簡介</string>
+    <string name="titleExaminationSubject">考試科目</string>
+    <string name="titleIntroduction">简介</string>
+    <string name="titleSubjectInfor">題目信息</string>
+    <string name="titleLimitedSpecial">限時特惠</string>
+    <string name="titleBelongCategory">所屬考試類別</string>
+    <string name="titleAllBankNum">總共題目數</string>
+    <string name="titlePassBankNum">合格題目數</string>
+    <string name="titlePassScaleAllBank">合格題數 / 總共題數</string>
+    <string name="titleSameCategoryOtherSubject">同類別的其他科目</string>
+    <string name="titleQuestionBank">題庫</string>
+    <string name="titleExaminationResult">考試結果</string>
+    <string name="titleFreeAdvertisement">免費試用版廣告</string>
+
+    <!--按钮文字-->
+    <string name="buttonGoSetting">前往設置</string>
+    <string name="buttonSendResetEmail">發送重置密碼郵件</string>
+    <string name="buttonLogin">登入</string>
+    <string name="buttonLogout">登出</string>
+    <string name="buttonSignup">註冊</string>
+    <string name="buttonConfirm">確認</string>
+    <string name="buttonCancle">取消</string>
+    <string name="buttonNoThanks">不用了，謝謝</string>
+    <string name="buttonSubmit">提交</string>
+    <string name="buttonForgotPwd">忘記密碼</string>
+    <string name="buttonNoRegister">未註冊嗎？</string>
+    <string name="buttonUpdateNow">立即更新</string>
+    <string name="buttonMore">更多</string>
+    <string name="buttonContinueModify">繼續更改</string>
+    <string name="buttonCancleModify">取消更改</string>
+    <string name="buttonGallery">從相簿選擇</string>
+    <string name="buttonCamera">相機</string>
+    <string name="buttonPurchasedNow">立即購買</string>
+    <string name="buttonGotoPurchased">前往購買</string>
+    <string name="buttonAllPurchased">合並購買</string>
+    <string name="buttonSinglePurchased">單獨購買</string>
+    <string name="buttonGotoExamination">前往答題</string>
+    <string name="buttonOpenMoreInfor">查看更多詳情</string>
+    <string name="buttonReget">重新加載</string>
+    <string name="buttonNext">下一題</string>
+    <string name="buttonGotoResult">查看成績</string>
+    <string name="buttonFinshExamination">結束答題</string>
+    <string name="buttonRestartExamination">重新答題</string>
+    <string name="buttonWrongBank">錯題通</string>
+    <string name="buttonCheck">查看</string>
+    <string name="buttonAlreadyPurchased">已購買</string>
+    <string name="buttonAlreadyPurchasedAll">已購買整套試題</string>
+    <string name="buttonAll">全部</string>
+    <string name="buttonCategory">合並購買</string>
+    <string name="buttonSubject">單獨購買</string>
+    <string name="buttonOtherPurchased">其它購買</string>
+    <!-- 權限相關-->
+    <string name="permissionTitle">此應用需要的權限</string>
+    <string name="permissionNetwork">網絡訪問</string>
+    <string name="permissionNetworkDesc">用於即時通訊傳輸</string>
+    <string name="permissionRead">讀取文件</string>
+    <string name="permissionReadDesc">用於設置頭像與發送圖片</string>
+    <string name="permissionWrite">保存文件</string>
+    <string name="permissionWriteDesc">用於頭像與圖片存儲</string>
+    <string name="permissionRecordAudio">麥克風</string>
+    <string name="permissionRecordAudioDesc">用於音頻聊天</string>
+    <string name="permissionCamera">拍照功能</string>
+    <string name="permissionCameraDesc">用於設置頭像與發送圖片</string>
+    <string name="permissionSubmit">為確保操作正常，請按此進行授權</string>
+    <string name="permissionWaiting" tools:ignore="TypographyEllipsis">授權成功，請稍等...</string>
+    <string name="permissionAsistPermission">授予權限</string>
+
+    <!-- 普通文字-->
+    <string name="normalAllPurchasedRecords">全部購買記錄</string>
+    <string name="normalCategoryPurchasedRecords">合並購買記錄</string>
+    <string name="normalSubjectPurchasedRecords">單獨購買記錄</string>
+    <string name="normalOtherPurchasedRecords">其它購買記錄</string>
+
+
+</resources>

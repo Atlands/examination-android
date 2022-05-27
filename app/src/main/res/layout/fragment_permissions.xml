@@ -1,0 +1,189 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fpToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/permissionTitle"
+                    android:textColor="@color/colorMainOne"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:minHeight="92dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/permissionNetwork"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/colorBlack95"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/fpStateNetwork"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_success_green"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/permissionRead"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/colorBlack95"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/fpStateRead"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_success_green"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/permissionWrite"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/colorBlack95"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/fpStateWrite"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_success_green"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/permissionCamera"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/colorBlack95"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/fpStateCamera"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end|center_vertical"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_success_green"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0"/>
+
+        <TextView
+            android:id="@+id/getPermission"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/permissionSubmit"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_button_normal_activited_selector"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

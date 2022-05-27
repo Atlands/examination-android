@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorMainOne">#7FCDFA</color>
+    <color name="colorMainTwo">#3898CF</color>
+    <color name="colorMainThree">#015C8F</color>
+    <color name="colorMainFour">#4988FD</color>
+    <color name="colorMainFive">#3973F4</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite50">#50FFFFFF</color>
+    <color name="colorWhite70">#70FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack98">#98000000</color>
+    <color name="colorBlack95">#95000000</color>
+    <color name="colorBlack90">#80000000</color>
+    <color name="color33">#333333</color>
+    <color name="colorTranslate">#00000000</color>
+
+    <!--阴影色-->
+    <color name="colorCCC10">#10CCCCCC</color>
+    <color name="colorCCC15">#15CCCCCC</color>
+    <color name="colorCCC20">#20CCCCCC</color>
+
+
+    <!--灰色-->
+    <color name="colorE0">#E0E0E0</color>
+    <color name="colorF0">#F0F0F0</color>
+    <color name="colorF8">#F8F8F8</color>
+    <color name="colorBE">#BEBEBE</color>
+    <color name="colorBF">#BFBFBF</color>
+    <color name="color8a">#8a8a8a</color>
+    <color name="color78">#787878</color>
+
+    <!--绿色-->
+    <color name="colorGreenNormal">#36AB60</color>
+    <color name="colorGreenDrak">#228345</color>
+
+    <color name="colorRedNormal">#FF0000</color>
+    <color name="colorRedDark">#D80000</color>
+    <color name="colorRed30">#30FF0000</color>
+</resources>

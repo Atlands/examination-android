@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.oscar.writtenexamination"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+        aaptOptions { cruncherEnabled = false }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions { javaMaxHeapSize "4g" }
+
+}
+
+repositories {
+    google()
+    mavenCentral()
+    jcenter()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Parse
+    implementation 'com.github.parse-community.Parse-SDK-Android:parse:1.18.5'
+    implementation 'com.github.parse-community.Parse-SDK-Android:fcm:1.18.6'
+    implementation 'com.parse.bolts:bolts-android:1.4.0'
+
+    // CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // UltraViewPager
+    implementation('com.alibaba.android:ultraviewpager:1.0.7.7@aar') {
+        transitive = true
+    }
+
+    // PayPal
+    implementation 'com.braintreepayments.api:braintree:2.22.0'
+
+    // Google & Firebase
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    //butterknife绑定工具
+    implementation 'com.jakewharton:butterknife:9.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
+
+    //gson库
+    implementation 'com.google.code.gson:gson:2.8.1'
+
+    //标签布局
+    implementation 'com.github.LRH1993:AutoFlowLayout:1.0.5'
+
+    //标签控件
+    implementation 'com.github.donkingliang:LabelsView:1.6.1'
+
+    //状态栏工具
+    implementation 'com.github.Ye-Miao:StatusBarUtil:1.7.5'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+    //UI控件
+    implementation 'net.qiujuer.genius:ui:2.1.1'
+    implementation 'com.blankj:utilcode:1.26.0'
+
+    //權限相關
+    implementation 'pub.devrel:easypermissions:0.3.0'
+
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.9.0@aar") {
+        transitive = true
+    }
+
+    //沉浸式
+    implementation "com.flyco.systembar:FlycoSystemBar_Lib:1.0.0@aar"
+
+    //轮播图banner
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //可折叠的textview
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+
+    //刷新控件
+    implementation 'com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6'
+}

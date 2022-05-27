@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.LoginSign.LoginSignActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/lsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingEnd="20dp"
+            android:background="@color/colorWhite"
+            tools:ignore="RtlSymmetry">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/lsBackBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back_normal"
+                    tools:ignore="ContentDescription" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lsNavigationRy"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:elevation="5dp"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    tools:listItem="@layout/item_top_tab_navigation_regular" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/lsVP"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

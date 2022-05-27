@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/fphFailedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tipsGetDataFailed"
+            android:textColor="@color/colorBlack95"/>
+
+        <TextView
+            android:id="@+id/fphRegetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/buttonReget"
+            android:textColor="@color/colorWhite"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button_normal_activited_selector" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fphNodataTv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/tipsNoPurchasedAnything"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/fphMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/fphScreenBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/fphScreenTitleTv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:textColor="@color/colorBlack95"-->
+<!--                android:textSize="14sp"-->
+<!--                android:text="@string/normalAllPurchasedRecords"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="10dp"-->
+<!--                android:layout_height="10dp"-->
+<!--                android:layout_toEndOf="@+id/fphScreenTitleTv"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@drawable/ic_down_bfgray"-->
+<!--                tools:ignore="ContentDescription" />-->
+
+<!--        </RelativeLayout>-->
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fpwRy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

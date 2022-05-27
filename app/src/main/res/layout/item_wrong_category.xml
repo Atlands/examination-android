@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:background="@color/colorTranslate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="25dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="6dp"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/iwcCateImg"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bg_nodata_normal"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="80dp"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/iwcCataNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/bg_nodata_normal"/>
+
+            <TextView
+                android:id="@+id/iwcCateInforTv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/colorBlack95"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_nodata_normal"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorF0"/>
+
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_dialog_bottom_upward"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_purchased_normal"
+                android:layout_toStartOf="@+id/dpcTitleTv"
+                tools:ignore="ContentDescription"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/dpcTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonAllPurchased"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0"/>
+
+        <RelativeLayout
+            android:id="@+id/dpcPBLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorF8">
+
+            <ProgressBar
+                android:id="@+id/dpcProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateTint="@color/colorBlack95"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/dpcCateImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="ContentDescription"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dpcCateNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorBlack95"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dpcPurchasedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/buttonAllPurchased"
+            android:background="?android:attr/selectableItemBackground"
+            android:textStyle="normal"
+            android:textSize="18sp"
+            android:textColor="@color/colorMainTwo"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorF0" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dpcCancleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorF8"
+        android:gravity="center"
+        android:text="@string/buttonNoThanks"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack95"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
